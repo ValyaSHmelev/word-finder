@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Поиск слов</title>
+</head>
+
+<body class="d-flex justify-content-center  vh-100">
+    <div class="container text-center w-25">
+        <div class="mb-3">
+            <label class="form-label">Маска слова</label>
+            <input id="mask" type="search" class="form-control form-control-sm text-center">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Буквы которые есть в слове</label>
+            <input id="letter-has" type="search" class="form-control form-control-sm text-center">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Буквы которых нет в слове</label>
+            <input id="letter-hasnt" type="search" class="form-control form-control-sm text-center">
+        </div>
+
+        <div class="results">
+            <h4>Результат: <span id="count" ></span></h4>
+            <div class=" w-50" id="result-list">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="glossary.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
